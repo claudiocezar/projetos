@@ -1,0 +1,68 @@
+.contato-imagem {
+  max-width: 380px;
+  max-height: auto;
+  margin: 2rem 0;
+}
+
+.conteiner-contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.conteiner-formulario {
+  padding: 1.5rem;
+}
+
+.contato-formulario {
+  padding: 1.5 rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.preferencia-contato {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-padrao {
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: 1px solid #0473a4;
+}
+
+fieldset {
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: 1px solid #0473a4;
+}
+.checkbox {
+  margin: 20px 20px;
+}
+.seletor-horario {
+  width: 50%;
+  margin-bottom: 20px;
+}
+.enviar {
+  width: 90%;
+  padding: 1.2rem;
+  margin: 1.5rem auto;
+  background: #054c6e;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background: #0473a4;
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 768px) {
+}

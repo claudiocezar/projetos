@@ -1,0 +1,36 @@
+.conteiner-sobre {
+  display: flex;
+  background-color: #f3f3f3f3;
+}
+
+.sobre-texto {
+  font-family: "open sans", sans-serif;
+  color: #1c1c1c;
+  margin-top: 1.5rem;
+}
+.sobre-texto::first-letter {
+  /* Use :first-letter if você precise muito de compatibilidade com IE 8 */
+  color: #0473a4;
+  font-size: 2rem;
+}
+
+.sobre-bloco {
+  width: 80%;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.sobre-imagem {
+  padding: 0.5rem 0.8rem 0 0.5rem;
+}
+
+.sobre-imagem-foto {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+}
