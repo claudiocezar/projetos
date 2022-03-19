@@ -19,6 +19,24 @@
 
 </head>
 
+<style>
+  .cabecalho-main-texto::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+  }
+
+  @keyframes pisca {
+    0%, 100%{
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    
+  }
+</style>
 <body>
 <div class="caixa">
 
@@ -38,7 +56,21 @@
     <img class="cabecalho-main-imagem" src="img/hashtag-logo2.png">
     <div class="cabecalho-main-conteiner">
       <h1 class="cabecalho-main-titulo"># Conectando Idéias</h1>
-      <p class="cabecalho-main-texto">Estratégias eficazes para consolidar seu negócio na internet</p>
+      <p class="cabecalho-main-texto">Estratégias eficazes para consolidar seu negócio na internet.</p>
+      <script>
+        function typeWriter(elemento){
+          const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach((letra, i) => {
+              setTimeout(function(){
+                elemento.innerHTML += letra;
+              }, 75 * i)
+          });
+        }
+
+        const titulo = document.querySelector('.cabecalho-main-texto');
+        typeWriter(titulo);
+      </script>
   </div>
   </section>
 </header>
@@ -47,10 +79,10 @@
 <main>
   <section class="conteiner">
     <section class="conteiner-sobre">
-      <div class="sobre-imagem">
+      <div class="sobre-imagem item-sobre-primeiro">
         <img class="sobre-imagem-foto" src="img/sobre-imagem.jpg" alt="Moça segurando uma hashtag">
       </div>
-      <div class="sobre-bloco" id="empresa">
+      <div class="sobre-bloco item-sobre-segundo" id="empresa">
         <h2 class="subtitulo">A Empresa</h2>
         <p class="sobre-texto">A Hashtag Web é uma agência de desenvolvimento, criação e marketing digital, situada na cidade de Nova Friburgo, região serrana do Rio de Janeiro.</p>
         <p style="margin-top: 1.5rem;">Trabalhamos com o objetivo de fazer sua empresa marcar presença na internet, conectando seus serviços com as necessidades de seus clientes</p>
@@ -88,7 +120,7 @@
       <div class="conteiner-servicos-bloco servicos-analise">
         <img src="img/trafego.png" alt="logo serviço analise de métricas">
         <h3>Análise de Métricas</h3>
-        <p class="servicos-texto">Analisamos as métricas de seu negócio através de ferramentas Google como o Analytics e o Search Console, permitindo definir de uma maneira rápida e eficiente, as melhores estratégias para as tomadas de decisões mais assertivas.</p>
+        <p class="servicos-texto">Analisamos as métricas de seu negócio através de ferramentas modernas, permitindo definir de uma maneira rápida e eficiente, as melhores estratégias para as tomadas de decisões mais assertivas.</p>
       </div>
       <div class="conteiner-servicos-bloco servicos-analise">
         <img src="img/gestao.png" alt="logo serviço analise de métricas">
