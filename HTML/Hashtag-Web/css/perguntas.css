@@ -35,9 +35,19 @@
   padding: 1.5rem;
 }
 
+.imagem-2 {
+  display: none;
+}
+
+.imagem-2 {
+  width: auto;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
 .imagem-duvidas {
   max-width: 600px;
-  min-width: 375px;
+
   border-radius: 10px;
 }
 
@@ -91,5 +101,11 @@
     object-fit: cover;
     width: 100%;
     margin-top: 0.8rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .imagem-duvidas {
+    width: 100%;
   }
 }
