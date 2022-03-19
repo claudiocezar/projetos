@@ -59,5 +59,37 @@ li {
   margin-top: 1rem;
 }
 
-@media screen and (min-width: 768px) {
+/* PARTE MOBILE */
+
+@media screen and (max-width: 768px) {
+  .rodape-contato-conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  iframe {
+    width: 300px;
+    height: 450px;
+  }
+
+  .rodape {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    background: radial-gradient(
+      93.75% 175.92% at 97.92% 10.02%,
+      #01375f 0%,
+      #043d67 35.94%,
+      #05416d 61.72%,
+      #0a7a9d 100%
+    );
+  }
 }

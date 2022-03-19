@@ -32,5 +32,23 @@
   border-radius: 10px;
 }
 
-@media screen and (min-width: 768px) {
+/* PARTE MOBILE */
+
+@media screen and (max-width: 768px) {
+  .conteiner-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3f3;
+    background-image: url("../img/bg-sobre.png");
+    background-position: top;
+  }
+  .item-sobre-primeiro {
+    order: 1;
+  }
+
+  .item-sobre-segundo {
+    order: 0;
+  }
 }

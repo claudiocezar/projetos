@@ -13,11 +13,18 @@
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
   color: #fff;
-  background-color: #055071;
   text-align: left;
   margin-top: 0.5rem;
   padding-left: 1.3rem;
   padding-top: 0.5rem;
+  /*background-color: #055071;*/
+  background: radial-gradient(
+    93.75% 175.92% at 97.92% 10.02%,
+    #01375f 0%,
+    #043d67 35.94%,
+    #05416d 61.72%,
+    #055071 100% /*#0a7a9d 100%*/
+  );
 }
 
 .servicos-texto {
@@ -42,12 +49,38 @@
   border: 1px #fff solid;
   width: 280px;
   padding: 2rem;
-  margin: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .conteiner-servicos-bloco:hover {
   background-color: #01375f;
-  transition: 0.6s background;
+  transition: 1s background;
 }
 
-@media screen and (min-width: 768px) {
+.conteiner-servicos-bloco:hover h3 {
+  font-size: 1.7rem;
+  color: #02b3e9;
+}
+
+@media screen and (max-width: 768px) {
+  .conteiner-servicos-bloco {
+    background: linear-gradient(
+      257.51deg,
+      rgba(255, 255, 255, 0.02) 0%,
+      rgba(255, 255, 255, 0.05) 33.69%,
+      rgba(255, 255, 255, 0.06) 54.09%,
+      rgba(255, 255, 255, 0.02) 81.73%,
+      rgba(255, 255, 255, 0.02) 100%
+    );
+    border-radius: 15px;
+    border: 1px #fff solid;
+    width: 100%;
+    padding: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }

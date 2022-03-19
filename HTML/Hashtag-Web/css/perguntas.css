@@ -37,9 +37,59 @@
 
 .imagem-duvidas {
   max-width: 600px;
-  min-width: 400px;
+  min-width: 375px;
   border-radius: 10px;
 }
 
-@media screen and (min-width: 768px) {
+/* PARTE MOBILE */
+
+@media screen and (max-width: 768px) {
+  .perguntas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    background-color: #f3f3f3f3;
+  }
+  .imagem-duvidas {
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  perguntas-titulo {
+    font-size: 1.7rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #0473a4;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .perguntas-bloco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .perguntas-titulo {
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #0473a4;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .perguntas-img {
+    width: 100%;
+    padding: 0px;
+  }
+  .imagem-duvidas {
+    max-height: 297px;
+    min-height: 100px;
+    object-fit: cover;
+    width: 100%;
+    margin-top: 0.8rem;
+  }
 }
